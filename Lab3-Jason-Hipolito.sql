@@ -23,14 +23,12 @@ where city = 'Duluth';
 --Query 5 
 Select name, city
 from agents
-where city != 'New York' and city != 'Duluth';
+where city != 'New York' or city != 'Duluth';
 
 --Query 6 (check)
 Select *
 From products
-Where (city != 'Dallas' 
-and city != 'Duluth' )
-and priceusd > 1;
+Where (city != 'Dallas' or city != 'Duluth') and priceusd > 1;
 
 --Query 7
 Select *
